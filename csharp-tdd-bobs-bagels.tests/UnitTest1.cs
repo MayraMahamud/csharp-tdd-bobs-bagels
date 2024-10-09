@@ -150,18 +150,20 @@ public class Tests
 
 
 
-    //[Test]
-    //public void GetTotalCostTest()
-    //{
-    //    Basket basket = new Basket();
+    [Test]
+    public void GetTotalCostTest()
+    {
+        Basket basket = new Basket();
 
-    //    basket.Add("bagel");
+        basket.Add("bagel");
+        basket.Add("Coffee");
+
+
+        decimal totalCost = basket.GetTotalCost7();
         
-    //    decimal totalCost = basket.GetTotalCost();
 
+        //  Assert.That(basket.EqualTo totalCost);
+        Assert.That(basket.Items.Count, Is.EqualTo());
 
-    //    //  Assert.That(basket.EqualTo totalCost);
-    //    Assert.That(basket.items.Count, Is.EqualTo(0));
-
-    //}
+    }
 }
